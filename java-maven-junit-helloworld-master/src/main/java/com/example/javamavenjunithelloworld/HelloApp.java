@@ -11,12 +11,12 @@ public class HelloApp {
     static int EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD = 2;
     static int EXIT_STATUS_HELLO_FAILED = 4;
 
-	/**
-	 * The main method of this program.
-	 *
-	 * @param args
-	 *            Arguments passed to this program.
-	 */
+   /**
+   * The main method of this program.
+   *
+   * @param args
+   *            Arguments passed to this program.
+   */
     public static void main(String[] args) {
 
      int times = DEFAULT_TIMES;
@@ -30,10 +30,10 @@ public class HelloApp {
 			}
 		}
 
-		Hello hi = new Hello();
-		try {
-			hi.setTimes(times);
-		} catch (IllegalArgumentException e) {
+    Hello hi = new Hello();
+      try {
+         hi.setTimes(times);
+          } catch (IllegalArgumentException e) {
 			System.err.println("Something went wrong: " + e.getMessage());
 			System.exit(EXIT_STATUS_HELLO_FAILED);
 		}
